@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BusinessModel.io - Learn, Create and Collaborate">
+    <meta name="author" content="Jerry Kelih @ BusinessModel.io">
+    <meta name="copyright" content="Copyright (c) 2014 BusinessModel.io">
+    <title>Starter Template for Bootstrap</title>
+    <!-- Twitter Card data-->
+    <meta name="twitter:card" content="BusinessModel.io">
+    <meta name="twitter:site" content="@businessmodel.io">
+    <meta name="twitter:title" content="BusinessModel.io">
+    <meta name="twitter:description" content="Your idea needs a business model">
+    <meta name="twitter:creator" content="@businessmodel.io">
+    <meta name="twitter:image" content="http://www.businessmodel.io.com/img/business-model-canvas-workshops.jpg">
+    <!-- Open Graph data-->
+    <meta property="og:title" content="BusinessModel.io">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.businessmodel.io/">
+    <meta property="og:image" content="http://www.businessmodel.io.com/img/businessmodel_io-logo-fb.png">
+    <meta property="og:description" content="Your idea needs a business model">
+    <meta property="og:site_name" content="BusinessModel.io">
+    <meta property="fb:admins" content="734013802">
+    <meta property="fb:admins" content="538223649656200">
+    <!-- Favicon-->
+    <!--if IElink(rel='shortcut icon', href='favicon.ico')
+    -->
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <meta name="apple-mobile-web-app-title" content="BusinessModel.io">
+    <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#3397db">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="application-name" content="BusinessModel.io">
+    <!-- PT Sans Font-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700">
+    <!-- BMicons Icon Font-->
+    <link rel="stylesheet" href="https://fontastic.s3.amazonaws.com/pmYU6dTfoi4GVV4Akyczqe/icons.css">
+    <!-- Bootstrap core CSS-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- Custom styles-->
+    <link rel="stylesheet" href="main.css">
+    <!-- if lt IE 9
+    script(src='//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js')
+    -->
+  </head>
+  <body ng-app="bmi-home" id="scrollArea" ng-controller="ScrollCtrl">
+    <nav ng-animate="'animate'" scroll id="page" ng-class="{navscroll:bmiChangeClass}" role="navigation" ng-controller="NavBarCtrl" class="navbar-inverse navbar-static navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" ng-click="isCollapsed = !isCollapsed" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <div class="navbar-brand logo-nolink"><i class="icon icon-logo"></i>BusinessModel.io</div>
+      </div>
+      <div collapse="isCollapsed" class="navbar-collapse bs-js-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a ng-click="gotoElement('learn')" role="menuitem" tabindex="-1" href="#learn">Learn</a></li>
+          <li><a ng-click="gotoElement('create')" role="menuitem" tabindex="-1" href="#create">Create</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron text-center">
+      <div class="container"><i class="icon icon-logo"></i>
+        <h1 class="tagline">Your idea needs a business model</h1>
+        <p><a ng-click="gotoElement('learn')" class="btn btn-primary btn-lg">Let's start</a></p>
+        <div id="learn"></div>
+      </div>
+    </div>
+    <div class="container text-center">
+      <section class="row learn">
+        <div class="col-xs-12">
+          <h2>Learn</h2>
+          <h3>Attend one our free workshops and learn business model canvas the fun way</h3><img src="img/business-model-canvas-workshops.jpg" alt="Business model canvas workshops" class="img-thumbnail photo">
+          <p><a href="http://workshops.businessmodel.io/workshops/" class="btn btn-primary btn-lg">Book your Spot</a></p>
+        </div>
+      </section>
+      <hr>
+      <div id="create"></div>
+      <section class="row create">
+        <div class="col-xs-12">
+          <h2>Create</h2>
+          <h3>Create business model canvas on your device
+            <and>collaborate with others in real time</and>
+          </h3>
+          <div class="row">
+            <div class="col-xs-6"><img src="img/business-model-canvas-app-desktop.jpg" alt="Business model canvas app for desktop and laptop computers" class="pull-right img-thumbnail photo"></div>
+            <div class="col-xs-6"><img src="img/business-model-canvas-app-tablet.jpg" alt="Business model canvas app for tablets like iPad" class="pull-left img-thumbnail photo"></div>
+          </div>
+          <p><a href="http://canvas.businessmodel.io/" class="btn btn-primary btn-lg">Create your business model</a></p>
+          <p>(It’s free - we are in beta)</p>
+        </div>
+      </section>
+    </div>
+    <footer class="text-center">
+      <h3><a href="mailto:info@businessmodel.io">Contact us</a></h3>
+      <p>Made with<span><i class="icon icon-heart"></i></span>for inovation in Norway</p>
+    </footer>
+    <div data-share="true" data-width="450" data-show-faces="true" class="fb-like"></div>
+  </body>
+  <!-- AngularJS-->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <!-- Angular Animate-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
+  <!-- Angular UI Bootstrap-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap.min.js"></script>
+  <!-- Custom Scripts-->
+  <script src="main.js"></script>
+</html>
