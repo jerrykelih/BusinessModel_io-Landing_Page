@@ -64,45 +64,36 @@
       </div>
       <div collapse="isCollapsed" class="navbar-collapse bs-js-navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a ng-click="gotoElement('learn')" role="menuitem" tabindex="-1" href="#learn">Learn</a></li>
-          <li><a ng-click="gotoElement('create')" role="menuitem" tabindex="-1" href="#create">Create</a></li>
+          <li><a ng-click="gotoElement('learn-move')" role="menuitem" tabindex="-1" href="#learn">Learn</a></li>
+          <li><a ng-click="gotoElement('create-move')" role="menuitem" tabindex="-1" href="#create">Create</a></li>
         </ul>
       </div>
     </nav>
-    <div class="jumbotron text-center">
-      <div class="container"><i class="icon icon-logo"></i>
-        <h1 class="tagline">Your idea needs a business model</h1>
-        <p><a ng-click="gotoElement('learn')" class="btn btn-primary btn-lg">Let's start</a></p>
-        <div id="learn"></div>
+    <section id="top-header" class="jumbotron text-center"><i class="icon icon-logo"></i>
+      <h1 class="tagline">Your idea needs a business model</h1>
+      <p><a ng-click="gotoElement('learn')" class="btn btn-primary btn-lg">Let's start</a></p>
+      <div id="learn-move"></div>
+    </section>
+    <section id="learn" class="jumbotron text-center">
+      <h2>Learn</h2>
+      <h3>Attend one our free workshops and learn business model canvas the fun way</h3><img src="img/business-model-canvas-workshops.jpg" alt="Business model canvas workshops" class="img-thumbnail photo">
+      <p><a href="http://workshops.businessmodel.io/workshops/" class="btn btn-primary btn-lg">Book your Spot</a></p>
+    </section>
+    <div id="create-move"></div>
+    <section id="create" class="jumbotron text-center">
+      <h2>Create</h2>
+      <h3>Create business model canvas on your device
+        <and>collaborate with others in real time</and>
+      </h3>
+      <div class="row">
+        <div class="col-xs-6"><img src="img/business-model-canvas-app-desktop.jpg" alt="Business model canvas app for desktop and laptop computers" class="pull-right img-thumbnail photo"></div>
+        <div class="col-xs-6"><img src="img/business-model-canvas-app-tablet.jpg" alt="Business model canvas app for tablets like iPad" class="pull-left img-thumbnail photo"></div>
       </div>
-    </div>
-    <div class="container text-center">
-      <section class="row learn">
-        <div class="col-xs-12">
-          <h2>Learn</h2>
-          <h3>Attend one our free workshops and learn business model canvas the fun way</h3><img src="img/business-model-canvas-workshops.jpg" alt="Business model canvas workshops" class="img-thumbnail photo">
-          <p><a href="http://workshops.businessmodel.io/workshops/" class="btn btn-primary btn-lg">Book your Spot</a></p>
-        </div>
-      </section>
-      <hr>
-      <div id="create"></div>
-      <section class="row create">
-        <div class="col-xs-12">
-          <h2>Create</h2>
-          <h3>Create business model canvas on your device
-            <and>collaborate with others in real time</and>
-          </h3>
-          <div class="row">
-            <div class="col-xs-6"><img src="img/business-model-canvas-app-desktop.jpg" alt="Business model canvas app for desktop and laptop computers" class="pull-right img-thumbnail photo"></div>
-            <div class="col-xs-6"><img src="img/business-model-canvas-app-tablet.jpg" alt="Business model canvas app for tablets like iPad" class="pull-left img-thumbnail photo"></div>
-          </div>
-          <p><a href="http://canvas.businessmodel.io/" class="btn btn-primary btn-lg">Create your business model</a></p>
-          <p>* It’s free - we are in beta</p>
-        </div>
-      </section>
-    </div>
-    <footer class="text-center">
-      <h3 class="contactus"><a href="mailto:info@businessmodel.io">Contact us</a></h3>
+      <p><a href="http://canvas.businessmodel.io/" class="btn btn-primary btn-lg">Create your business model</a></p>
+      <p>* It’s free - we are in beta</p>
+    </section>
+    <footer id="footer" class="jumbotron text-center">
+      <h3 class="contactus"><a href="mailto:info@businessmodel.io" target="_blank">Contact us</a></h3>
       <p class="madewithlove">Made with<span><i class="icon icon-heart"></i></span>for inovation in Norway</p>
     </footer>
     <div data-share="true" data-width="450" data-show-faces="true" class="fb-like"></div>
