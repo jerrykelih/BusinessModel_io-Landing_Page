@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BusinessModel.io - Your idea needs a business model">
+    <meta name="description" content="Learn, create and collaborate on business models">
     <meta name="author" content="Jerry Kelih @ BusinessModel.io">
     <meta name="copyright" content="Copyright (c) 2014 BusinessModel.io">
-    <title>Learn, create and collaborate on your business model - BusinessModel.io</title>
-    <!-- Twitter Card data-->
+    <title>Your idea needs a business model
+      <!-- Twitter Card data-->
+    </title>
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@businessmodel_io">
     <meta name="twitter:title" content="BusinessModel.io">
-    <meta name="twitter:description" content="Your idea needs a business model">
+    <meta name="twitter:description" content="Learn, create and collaborate on business models">
     <meta name="twitter:image" content="http://www.businessmodel.io/img/businessmodel_io-logo-tw.png">
     <meta name="twitter:url" content="http://www.businessmodel.io/">
     <!-- Open Graph data-->
@@ -19,10 +20,10 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://www.businessmodel.io/">
     <meta property="og:image" content="http://www.businessmodel.io/img/businessmodel_io-logo-fb.png">
-    <meta property="og:description" content="Your idea needs a business model">
+    <meta property="og:description" content="Learn, create and collaborate on business models">
     <meta property="og:site_name" content="BusinessModel.io">
     <meta property="fb:app_id" content="538223649656200">
-    <!-- Favicon-->
+    <!-- Favicons-->
     <!--if IElink(rel='shortcut icon', href='favicon.ico')
     -->
     <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
@@ -42,21 +43,21 @@
     <meta name="msapplication-TileColor" content="#3397db">
     <meta name="msapplication-TileImage" content="mstile-144x144.png">
     <meta name="application-name" content="BusinessModel.io">
-    <!-- PT Sans Font-->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700">
+    <!-- CDN links-->
     <!-- BMicons Icon Font-->
     <link rel="stylesheet" href="https://fontastic.s3.amazonaws.com/pmYU6dTfoi4GVV4Akyczqe/icons.css">
     <!-- Bootstrap core CSS-->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/flatly/bootstrap.min.css">
     <!-- Custom styles-->
     <link rel="stylesheet" href="main.css">
+    <!-- IE support-->
     <!-- if lt IE 9
     script(src='//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.min.js')
     script(src='//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js')
     -->
   </head>
   <body ng-app="bmi-home" id="scrollArea" ng-controller="ScrollCtrl">
-    <nav ng-animate="'animate'" scroll id="page" ng-class="{navscroll:bmiChangeClass}" role="navigation" ng-controller="NavBarCtrl" class="navbar-inverse navbar-static navbar-fixed-top">
+    <nav ng-animate="'animate'" scroll id="page" ng-class="{navscroll:bmiChangeClass}" role="navigation" ng-controller="NavBarCtrl" class="navbar-default navbar-static navbar-fixed-top showScroll">
       <div class="navbar-header">
         <button type="button" ng-click="isCollapsed = !isCollapsed" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
         <div class="navbar-brand logo-nolink"><i class="icon icon-logo"></i>BusinessModel.io</div>
@@ -68,18 +69,18 @@
         </ul>
       </div>
     </nav>
-    <section id="top-header" class="jumbotron text-center"><i class="icon icon-logo"></i>
-      <h1 class="tagline">Your idea needs a business model</h1>
+    <section id="top-header" class="jumbotron jumbo-inverse-light text-center"><i class="icon icon-logo"></i>
+      <h1>Your idea needs a business model</h1>
       <p><a ng-click="gotoElement('learn-move')" class="btn btn-primary btn-lg">Learn</a><a ng-click="gotoElement('create-move')" class="btn btn-primary btn-lg">Create</a></p>
       <div id="learn-move"></div>
     </section>
-    <section id="learn" class="jumbotron text-center">
+    <section id="learn" class="jumbotron jumbo-light text-center">
       <h2>Learn</h2>
       <h3>Attend one our free workshops and learn business model canvas the fun way</h3><img src="img/business-model-canvas-workshops.jpg" alt="Business model canvas workshops" class="img-thumbnail photo">
       <p><a href="http://workshops.businessmodel.io/workshops/" tooltip-placement="right" tooltip="See the workshop schedule" class="btn btn-primary btn-lg">Book your Spot</a></p>
     </section>
     <div id="create-move"></div>
-    <section id="create" class="jumbotron text-center">
+    <section id="create" class="jumbotron jumbo-dark text-center">
       <h2>Create</h2>
       <h3>Create business model canvas on your device
         <and>collaborate with others in real time</and>
@@ -91,48 +92,51 @@
       <p><a href="http://canvas.businessmodel.io/" tooltip-placement="right" tooltip="Sign in the Canvas App" class="btn btn-primary btn-lg">Create your business model</a></p>
       <p>* It’s free - we are in beta</p>
     </section>
-    <footer id="footer" class="jumbotron text-center">
+    <footer id="footer" class="jumbotron jumbo-inverse-dark text-center">
       <h3 class="contactus"><a href="mailto:info@businessmodel.io" target="_blank">Contact us</a></h3>
-      <p class="madewithlove">Made with<span><i class="icon icon-heart"></i></span>for inovation in Norway</p>
+      <p class="madewithlove">Made with<span><i class="icon icon-heart"></i>
+          <!-- CDN Scripts-->
+          <!-- AngularJS-->
+          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+          <!-- Angular Animate-->
+          <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
+          <!-- Angular UI Router-->
+          <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+          <!-- Angular UI Bootstrap-->
+          <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+          <!-- Custom Scripts-->
+          <script src="main.js"></script>
+          <!-- Google Analytics-->
+          <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-54965413-1', 'auto');
+            ga('send', 'pageview');
+            
+          </script>
+          <!-- Crazy Egg-->
+          <script>
+            setTimeout(function(){var a=document.createElement("script");
+            var b=document.getElementsByTagName("script")[0];
+            a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0017/5080.js?"+Math.floor(new Date().getTime()/3600000);
+            a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+            
+          </script>
+          <!-- Add This-->
+          <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-541b5a8d53fb4e0d"></script>
+          <script>var addthis_config = {"data_track_addressbar":true};</script>
+          <script>
+            addthis.layers({
+              'theme' : 'transparent',
+              'share' : {
+                'position' : 'left',
+                'services' : 'linkedin,twitter,email,facebook,more'
+              }
+            });
+          </script></span>for inovation in Norway</p>
     </footer>
     <div data-share="true" data-width="450" data-show-faces="true" class="fb-like"></div>
   </body>
-  <!-- AngularJS-->
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-  <!-- Angular Animate-->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
-  <!-- Angular UI Bootstrap-->
-  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
-  <!-- Custom Scripts-->
-  <script src="main.js"></script>
-  <!-- Google Analytics-->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-54965413-1', 'auto');
-    ga('send', 'pageview');
-    
-  </script>
-  <!-- Crazy Egg-->
-  <script>
-    setTimeout(function(){var a=document.createElement("script");
-    var b=document.getElementsByTagName("script")[0];
-    a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0017/5080.js?"+Math.floor(new Date().getTime()/3600000);
-    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-    
-  </script>
-  <!-- Add This-->
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-541b5a8d53fb4e0d"></script>
-  <script>var addthis_config = {"data_track_addressbar":true};</script>
-  <script>
-    addthis.layers({
-      'theme' : 'transparent',
-      'share' : {
-        'position' : 'left',
-        'services' : 'linkedin,facebook,twitter,email,more'
-      }
-    });
-  </script>
 </html>
