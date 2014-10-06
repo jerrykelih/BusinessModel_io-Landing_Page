@@ -1,2 +1,2 @@
-[BusinessModel.io](http://www.businessModel.io) Langin page
+[BusinessModel.io](http://www.businessModel.io) Landing page
 =============================
