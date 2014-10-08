@@ -111,9 +111,9 @@ app.service('anchorSmoothScroll', function(){
 app.controller('ScrollCtrl', function($scope, $location, anchorSmoothScroll) {
 
     $scope.gotoElement = function (eID){
-        // set the location.hash to the id of
-        // the element you wish to scroll to.
-        $location.hash('bottom');
+
+        // set the location.hash to the id ofthe element you wish to scroll to.
+        $location.hash('create');
 
         // call $anchorScroll()
         anchorSmoothScroll.scrollTo(eID);
