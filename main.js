@@ -106,17 +106,15 @@ app.service('anchorSmoothScroll', function(){
 
     };
 
-});
+})
+  .controller('ScrollCtrl', function($scope, $location, anchorSmoothScroll) {
 
-app.controller('ScrollCtrl', function($scope, $location, anchorSmoothScroll) {
+      $scope.gotoElement = function (eID){
 
-    $scope.gotoElement = function (eID){
 
-        // set the location.hash to the id ofthe element you wish to scroll to.
-        $location.hash('create');
 
-        // call $anchorScroll()
-        anchorSmoothScroll.scrollTo(eID);
+          // call $anchorScroll()
+          anchorSmoothScroll.scrollTo(eID);
 
-    };
-});
+      };
+  });
