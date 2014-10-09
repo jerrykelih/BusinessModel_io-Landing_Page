@@ -69,6 +69,13 @@ img {
 .navbar-default .navbar-brand:focus {
   color: #eceff1;
 }
+.navbar-default .navbar-brand.logo-nolink {
+  cursor: default;
+}
+.navbar-default .navbar-brand.logo-nolink:hover,
+.navbar-default .navbar-brand.logo-nolink:focus {
+  color: #b0bec5;
+}
 .navbar-default .navbar-brand span.icon-logo {
   margin-right: 5px;
   font-size: 25px;
@@ -82,16 +89,6 @@ img {
 .navbar-default .navbar-nav>.active>a {
   color: #b0bec5;
   background-color: darkness(#263238, 60%);
-}
-.navbar-default.logo-nolink {
-  color: #cfd8dc;
-  height: 40px;
-  font-size: 14px;
-  padding: 6px 20px;
-}
-.navbar-default.logo-nolink:hover,
-.navbar-default.logo-nolink:focus {
-  color: #cfd8dc;
 }
 .showScroll {
   visibility: hidden;
