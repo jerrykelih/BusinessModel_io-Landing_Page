@@ -32,6 +32,12 @@ img {
 .img-thumbnail {
   border: 1px solid #cfd8dc;
 }
+.iconLeft {
+  padding-right: 5px;
+}
+.iconRight {
+  padding-left: 5px;
+}
 .btn {
   text-transform: uppercase;
 }
@@ -93,12 +99,14 @@ img {
 .showScroll {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  -webkit-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+          transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
 .showScroll.navscroll {
   visibility: visible;
   opacity: 1;
-  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 .jumbotron {
   margin: 0;
