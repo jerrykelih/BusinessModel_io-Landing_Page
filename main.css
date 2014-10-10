@@ -7,6 +7,7 @@ i.icon:before {
 h1,
 .jumbotron h1 {
   font-size: 3rem;
+  line-height: 4rem;
   margin-top: 10px;
 }
 h2 {
@@ -15,11 +16,13 @@ h2 {
 }
 h3 {
   font-size: 2rem;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 a {
   color: #3397db;
   text-decoration: none;
+  -webkit-transition: background-color 0.3s ease;
+          transition: background-color 0.3s ease;
 }
 a:hover,
 a:focus {
@@ -40,6 +43,10 @@ img {
 }
 .btn {
   text-transform: uppercase;
+  -webkit-transition: background-color 0.3s ease;
+          transition: background-color 0.3s ease;
+  margin: 10px;
+  padding: 12px 24px;
 }
 .btn.btn-blueGrey {
   border: 1px solid #fff;
@@ -114,15 +121,21 @@ img {
 .jumbotron p {
   font-size: 1.4rem;
 }
-.jumbotron .btn-info {
-  margin: 10px;
-  padding: 12px 24px;
-}
 .jumbo-light {
   background-color: #fff;
 }
 .jumbo-dark {
   background-color: #f6f9fb;
+}
+.jumbo-dark .btn-default {
+  margin-top: 30px;
+  border: 1px solid #263238;
+  background-color: inherit;
+  color: #263238;
+}
+.jumbo-dark .btn-default:hover,
+.jumbo-dark .btn-default:focus {
+  background-color: #fff;
 }
 .jumbo-inverse-light {
   background-color: #3397db;
@@ -130,12 +143,15 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.jumbo-inverse-light .btn-line-blue {
+.jumbo-inverse-light a {
+  color: #fff;
+}
+.jumbo-inverse-light .btn-info {
   margin-top: 30px;
   border: 1px solid #fff;
 }
-.jumbo-inverse-light .btn-line-blue:hover,
-.jumbo-inverse-light .btn-line-blue:focus {
+.jumbo-inverse-light .btn-info:hover,
+.jumbo-inverse-light .btn-info:focus {
   background-color: #52a7e0;
 }
 .jumbo-inverse-dark {
@@ -166,18 +182,60 @@ img {
 .modal .modal-footer {
   text-align: left;
 }
+.card {
+  padding: 10px;
+  margin: 15px;
+  border: none;
+  background-color: #2282c3;
+  -webkit-transition: background-color 0.3s ease;
+          transition: background-color 0.3s ease;
+}
+.card h2,
+.card p,
+.card .icon-apple {
+  color: #fff;
+}
+.card:hover,
+.card:focus {
+  background-color: #49a2df;
+}
+.card:hover h2,
+.card:focus h2,
+.card:hover p,
+.card:focus p,
+.card:hover .icon-apple,
+.card:focus .icon-apple {
+  color: #fff;
+}
+.card .logo {
+  width: 60%;
+  padding: 20px;
+  border: none;
+}
+.card .icon-apple {
+  font-size: 10rem;
+}
 h1,
 h2 {
   text-transform: uppercase;
 }
 #top-header i.icon-logo {
-  font-size: 11rem;
+  font-size: 9rem;
 }
-#learn img {
-  width: 50%;
+#top-header h3 {
+  margin-top: 10px;
+}
+#learn .model-examples {
+  margin-bottom: 35px;
 }
 #create img {
   width: 80%;
+}
+#workshops img {
+  width: 50%;
+}
+.madewithlove {
+  margin-top: 20px;
 }
 .madewithlove span {
   margin: 0px 5px;
