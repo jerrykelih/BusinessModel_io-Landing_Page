@@ -169,10 +169,10 @@ img {
   color: #fff;
   text-decoration: none;
 }
-.modal ul {
+.modal .modal-body ul {
   margin-bottom: 10px;
 }
-.modal ul li {
+.modal .modal-body ul li {
   cursor: pointer;
 }
 .modal .modal-header {
