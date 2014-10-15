@@ -1,4 +1,4 @@
-var app = angular.module('bmi-home', ['ui.bootstrap', 'ngAnimate']);
+var app = angular.module('bmi-home', ['angulartics', 'angulartics.google.analytics', 'ui.bootstrap', 'ngAnimate']);
 
 function NavBarCtrl($scope) {
     $scope.isCollapsed = true;
