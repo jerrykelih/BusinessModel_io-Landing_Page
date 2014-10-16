@@ -234,6 +234,14 @@ h2 {
 #workshops img {
   width: 40%;
 }
+#workshops .workshop-types {
+  padding: 0px 60px;
+}
+#client-logos img {
+  width: 100%;
+  padding: 50px;
+  height: auto;
+}
 .madewithlove {
   margin-top: 20px;
 }
