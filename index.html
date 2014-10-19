@@ -62,13 +62,14 @@
       </div>
       <div collapse="isCollapsed" class="navbar-collapse bs-js-navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a ng-click="gotoElement('learn-move')" role="menuitem" tabindex="-1" href="#learn">Learn</a></li>
-          <li><a ng-click="gotoElement('create-move')" role="menuitem" tabindex="-1" href="#create">Create</a></li>
+          <li><a ng-click="gotoElement('apps-move')" role="menuitem" tabindex="-1" href="#apps">Apps</a></li>
           <li><a ng-click="gotoElement('workshops-move')" role="menuitem" tabindex="-1" href="#workshops">Workshops</a></li>
+          <li><a ng-click="gotoElement('clients-move')" role="menuitem" tabindex="-1" href="#clients">Clients</a></li>
+          <li><a ng-click="gotoElement('feedback-move')" role="menuitem" tabindex="-1" href="#feedback">Feedback</a></li>
         </ul>
       </div>
     </nav>
-    <section id="top-header" class="jumbotron jumbo-dark text-center"><i class="icon icon-logo"></i>
+    <section id="top-header" class="jumbotron jumbo-inverse-light text-center"><i class="icon icon-logo"></i>
       <h1>Your idea needs a business model</h1>
       <h3>Learn, Create and Collaborate on your Business Model Canvas</h3>
       <!--p
@@ -80,108 +81,125 @@
         ng-click="gotoElement('learn-move')") Let's start
         
       -->
-      <div id="learn-move"></div>
+      <div id="apps-move"></div>
     </section>
-    <section id="learn" class="jumbotron jumbo-inverse-light text-center">
-      <h2>Learn</h2>
-      <h3>Learn business modeling from examples of most successful companies out there.</h3>
+    <section id="learn" class="jumbotron jumbo-light text-center"><img src="img/apps-icon.png" alt="Business Model Apps Icon" class="section-icon">
+      <h1 class="section-title">Apps</h1>
       <div class="row">
-        <div class="col-sm-4 col-sm-offset-4 model-examples"><a analytics-on="click" analytics-event="Learn with iPod example" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://learn.businessmodel.io/apple-ipod" class="lesson card img-thumbnail">
-            <h3>Apple iPod + iTunes</h3><span class="icon-apple"></span>
-            <p>Take a look at legendary Apple iPod + iTunes business model</p></a></div>
+        <div class="app-types col-sm-6">
+          <h2>Learn</h2>
+          <h3>Learn business modeling from examples of most successful companies out there (Alpha release)</h3><a analytics-on="click" analytics-event="Learn with iPod example - Card" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://learn.businessmodel.io/apple-ipod">
+            <div class="row">
+              <div class="col-xs-3"></div>
+              <div class="col-xs-6"><img src="img/apple-ipod-itunes-business-model.png" alt="Apple iPod iTunes Business Model" class="img-rounded">
+                <!--.lesson.card.card-light.img-rounded
+                h3 Apple iPod + iTunes
+                span.icon-apple
+                -->
+              </div>
+              <div class="col-xs-3"></div>
+              <div class="col-xs-12">
+                <div class="btn btn-info btn-lg">Learn From Examples</div>
+              </div>
+            </div></a>
+        </div>
+        <div class="app-types col-sm-6">
+          <h2>Create</h2>
+          <h3>Create business model canvas on your device and collaborate with others in real time (Beta release)</h3><a analytics-on="click" analytics-event="Create canvas" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://canvas.businessmodel.io/">
+            <div class="row">
+              <div class="col-xs-6"><img src="img/business-model-canvas-app-desktop.jpg" alt="Business model canvas app for desktop and laptop computers" class="pull-right img-rounded"></div>
+              <div class="col-xs-6"><img src="img/business-model-canvas-app-tablet.jpg" alt="Business model canvas app for tablets like iPad" class="pull-left img-rounded"></div>
+            </div>
+            <div class="btn btn-info btn-lg">Create your business model</div></a>
+        </div>
+      </div>
+    </section>
+    <div id="workshops-move"></div>
+    <section id="workshops" class="jumbotron jumbo-dark text-center"><img src="img/workshops-icon.png" alt="Business Model Worshops   Icon" class="section-icon">
+      <h1 class="section-title">Workshops</h1>
+      <div class="row">
+        <div class="workshop-photo col-xs-2"><img src="img/business-model-workshop-1.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
+        <div class="workshop-photo col-xs-2"><img src="img/business-model-workshop-2.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
+        <div class="workshop-photo col-xs-2"><img src="img/business-model-workshop-3.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
+        <div class="workshop-photo col-xs-2"><img src="img/business-model-workshop-4.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
+        <div class="workshop-photo col-xs-2"><img src="img/business-model-workshop-5.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
+        <div class="workshop-photo col-xs-2"><img src="img/business-model-workshop-6.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
+        <div class="workshop-types col-sm-6">
+          <h2>Open</h2>
+          <h3>Attend one of our free or payed workshops and learn business model canvas the fun way</h3>
+          <p><a analytics-on="click" analytics-event="Free - Book your spot" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://workshops.businessmodel.io/schedule" class="btn btn-info btn-lg">Book your Spot</a></p>
+        </div>
+        <div class="workshop-types col-sm-6">
+          <h2>Private</h2>
+          <h3>Request a private workshop a service for your company or organisation</h3>
+          <p><a analytics-on="click" analytics-event="Private - Request" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="mailto:info@businessmodel.io" target="_blank" class="btn btn-info btn-lg">Request</a></p>
+        </div>
       </div>
     </section>
   </body>
-  <div id="create-move">
-    <section id="create" class="jumbotron jumbo-light text-center">
-      <h2>Create</h2>
-      <h3>Create business model canvas on your device
-        <and>collaborate with others in real time</and>
-      </h3>
+  <div id="clients-move">
+    <section id="client-logos" class="jumbotron jumbo-light text-center">
       <div class="row">
-        <div class="col-xs-6"><img src="img/business-model-canvas-app-desktop.jpg" alt="Business model canvas app for desktop and laptop computers" class="pull-right img-thumbnail photo"></div>
-        <div class="col-xs-6"><img src="img/business-model-canvas-app-tablet.jpg" alt="Business model canvas app for tablets like iPad" class="pull-left img-thumbnail photo"></div>
+        <div class="col-xs-3"><img src="img/logo1.png" alt="Avinor" class="img-rounded"></div>
+        <div class="col-xs-3"><img src="img/logo2.png" alt="Swipe" class="img-rounded"></div>
+        <div class="col-xs-3"><img src="img/logo3.png" alt="Traumacare Ethiopia" class="img-rounded"></div>
+        <div class="col-xs-3"><img src="img/logo4.png" alt="Nordic Semiconductor" class="img-rounded"></div>
       </div>
-      <p><a analytics-on="click" analytics-event="Create canvas" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://canvas.businessmodel.io/" class="btn btn-info btn-lg">Create your business model</a></p>
     </section>
-    <div id="workshops-move">
-      <section id="workshops" class="jumbotron jumbo-dark text-center">
-        <div class="row">
-          <div class="col-sm-12">
-            <h1>Workshops</h1><img src="img/business-model-canvas-workshops.jpg" alt="Business model canvas workshops" class="img-thumbnail photo">
-          </div>
-          <div class="workshop-types col-sm-6">
-            <h2>Public</h2>
-            <h3>Attend one of our free or payed workshops and learn business model canvas the fun way</h3>
-            <p><a analytics-on="click" analytics-event="Free - Book your spot" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://workshops.businessmodel.io/schedule" class="btn btn-info btn-lg">Book your Spot</a></p>
-          </div>
-          <div class="workshop-types col-sm-6">
-            <h2>Private</h2>
-            <h3>Request a private workshop a service for your company or organisation</h3>
-            <p><a analytics-on="click" analytics-event="Private - Request" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="mailto:info@businessmodel.io" target="_blank" class="btn btn-info btn-lg">Request</a></p>
-          </div>
+  </div>
+  <div id="feedback-move">
+    <footer id="footer" class="jumbotron jumbo-inverse-dark text-center">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h3>Most of our services for free to try out. In return we ask for your honest<a analytics-on="click" analytics-event="Send Feedback Email" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="mailto:info@businessmodel.io?subject=Feedback on BusinessModel.io" target="_blank"> feedback.</a></h3>
         </div>
-      </section>
-      <section id="client-logos" class="jumbotron jumbo-light text-center">
-        <div class="row">
-          <div class="col-md-4"><img src="img/logo1.png" alt="Swipe" class="img-rounded"></div>
-          <div class="col-md-4"><img src="img/logo2.png" alt="Swipe" class="img-rounded"></div>
-          <div class="col-md-4"><img src="img/logo3.png" alt="Swipe" class="img-rounded"></div>
+        <div class="col-md-6 col-md-offset-3">
+          <p class="madewithlove">Made with<span><i class="icon icon-heart"></i>
+              <!-- CDN Scripts-->
+              <!-- AngularJS-->
+              <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+              <!-- Angular Animate-->
+              <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
+              <!-- Angular UI Router-->
+              <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+              <!-- Angular UI Bootstrap-->
+              <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+              <!-- Angular Analytics-->
+              <script src="http://www.businessmodel.io/lib/angulartics.min.js"></script>
+              <script src="http://www.businessmodel.io/lib/angulartics-ga.min.js"></script>
+              <!-- Custom Scripts-->
+              <script src="main.js"></script>
+              <!-- Google Analytics-->
+              <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-54965413-1', 'auto');
+                
+              </script>
+              <!-- Crazy Egg-->
+              <script>
+                setTimeout(function(){var a=document.createElement("script");
+                var b=document.getElementsByTagName("script")[0];
+                a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0017/5080.js?"+Math.floor(new Date().getTime()/3600000);
+                a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+                
+              </script>
+              <!-- Add This-->
+              <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-541b5a8d53fb4e0d"></script>
+              <script>var addthis_config = {"data_track_addressbar":true};</script>
+              <script>
+                addthis.layers({
+                  'theme' : 'transparent',
+                  'share' : {
+                    'position' : 'left',
+                    'services' : 'linkedin,twitter,email,facebook,more'
+                  }
+                });
+              </script></span>for innovation in Norway</p>
         </div>
-      </section>
-      <footer id="footer" class="jumbotron jumbo-inverse-dark text-center">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <h3>We are in public beta and you can use all our services for free to try out. All we ask is your honest<a analytics-on="click" analytics-event="Send Feedback Email" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="mailto:info@businessmodel.io?subject=Feedback on BusinessModel.io" target="_blank"> feedback.</a></h3>
-          </div>
-          <div class="col-md-6 col-md-offset-3">
-            <p class="madewithlove">Made with<span><i class="icon icon-heart"></i>
-                <!-- CDN Scripts-->
-                <!-- AngularJS-->
-                <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-                <!-- Angular Animate-->
-                <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
-                <!-- Angular UI Router-->
-                <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
-                <!-- Angular UI Bootstrap-->
-                <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
-                <!-- Angular Analytics-->
-                <script src="http://www.businessmodel.io/lib/angulartics.min.js"></script>
-                <script src="http://www.businessmodel.io/lib/angulartics-ga.min.js"></script>
-                <!-- Custom Scripts-->
-                <script src="main.js"></script>
-                <!-- Google Analytics-->
-                <script>
-                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-                  ga('create', 'UA-54965413-1', 'auto');
-                  
-                </script>
-                <!-- Crazy Egg-->
-                <script>
-                  setTimeout(function(){var a=document.createElement("script");
-                  var b=document.getElementsByTagName("script")[0];
-                  a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0017/5080.js?"+Math.floor(new Date().getTime()/3600000);
-                  a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-                  
-                </script>
-                <!-- Add This-->
-                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-541b5a8d53fb4e0d"></script>
-                <script>var addthis_config = {"data_track_addressbar":true};</script>
-                <script>
-                  addthis.layers({
-                    'theme' : 'transparent',
-                    'share' : {
-                      'position' : 'left',
-                      'services' : 'linkedin,twitter,email,facebook,more'
-                    }
-                  });
-                </script></span>for innovation in Norway</p>
-          </div>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </div>
 </html>

@@ -1,5 +1,6 @@
 body {
   color: #263238;
+  padding-top: 45px;
 }
 i.icon:before {
   vertical-align: middle;
@@ -10,9 +11,16 @@ h1,
   line-height: 4rem;
   margin-top: 10px;
 }
+h1.section-title {
+  color: #90a4ae !important;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
 h2 {
   font-size: 2.5rem;
   line-height: 3.2rem;
+  font-weight: 600;
 }
 h3 {
   font-size: 2rem;
@@ -40,6 +48,9 @@ img {
 }
 .iconRight {
   padding-left: 5px;
+}
+.section-icon {
+  width: 100px;
 }
 .btn {
   text-transform: uppercase;
@@ -183,28 +194,57 @@ img {
   text-align: left;
 }
 .card {
-  padding: 10px;
-  margin: 15px;
+  padding: 0px 30px;
+  margin: 20px;
   border: none;
+  width: 60%;
+}
+.card h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.card.card-light {
+  background-color: #f6f9fb;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+          transition: background-color 0.3s ease, color 0.3s ease;
+}
+.card.card-light h3,
+.card.card-light p,
+.card.card-light .icon-apple {
+  color: #263238;
+}
+.card.card-light:hover,
+.card.card-light:focus {
+  background-color: #eceff1;
+}
+.card.card-light:hover h3,
+.card.card-light:focus h3,
+.card.card-light:hover p,
+.card.card-light:focus p,
+.card.card-light:hover .icon-apple,
+.card.card-light:focus .icon-apple {
+  color: #2f3e46;
+}
+.card.card-invert-light {
   background-color: #2282c3;
   -webkit-transition: background-color 0.3s ease;
           transition: background-color 0.3s ease;
 }
-.card h2,
-.card p,
-.card .icon-apple {
+.card.card-invert-light h2,
+.card.card-invert-light p,
+.card.card-invert-light .icon-apple {
   color: #fff;
 }
-.card:hover,
-.card:focus {
+.card.card-invert-light:hover,
+.card.card-invert-light:focus {
   background-color: #49a2df;
 }
-.card:hover h2,
-.card:focus h2,
-.card:hover p,
-.card:focus p,
-.card:hover .icon-apple,
-.card:focus .icon-apple {
+.card.card-invert-light:hover h2,
+.card.card-invert-light:focus h2,
+.card.card-invert-light:hover p,
+.card.card-invert-light:focus p,
+.card.card-invert-light:hover .icon-apple,
+.card.card-invert-light:focus .icon-apple {
   color: #fff;
 }
 .card .logo {
@@ -213,11 +253,17 @@ img {
   border: none;
 }
 .card .icon-apple {
-  font-size: 10rem;
+  font-size: 6rem;
 }
 h1,
 h2 {
   text-transform: uppercase;
+}
+img {
+  width: 100%;
+}
+#top-header {
+  padding-bottom: 40px;
 }
 #top-header i.icon-logo {
   font-size: 9rem;
@@ -228,18 +274,11 @@ h2 {
 #learn .model-examples {
   margin-bottom: 35px;
 }
-#create img {
-  width: 80%;
-}
-#workshops img {
-  width: 40%;
-}
 #workshops .workshop-types {
   padding: 0px 60px;
 }
 #client-logos img {
-  width: 100%;
-  padding: 50px;
+  padding: 10%;
   height: auto;
 }
 .madewithlove {
