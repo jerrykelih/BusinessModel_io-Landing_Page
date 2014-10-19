@@ -13,7 +13,7 @@ h1,
 }
 h1.section-title {
   color: #90a4ae !important;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -261,6 +261,9 @@ h2 {
 }
 img {
   width: 100%;
+}
+hr {
+  width: 20%;
 }
 #top-header {
   padding-bottom: 40px;
