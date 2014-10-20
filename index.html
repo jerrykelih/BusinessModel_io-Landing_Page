@@ -43,10 +43,11 @@
     <meta name="msapplication-TileImage" content="mstile-144x144.png">
     <meta name="application-name" content="BusinessModel.io">
     <!-- CDN links-->
+    <!-- include ../../lib/cdn/scripts-links-head-->
     <!-- BMicons Icon Font-->
-    <link rel="stylesheet" href="https://fontastic.s3.amazonaws.com/pmYU6dTfoi4GVV4Akyczqe/icons.css">
-    <!-- Bootstrap core CSS-->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/bmicons/styles.css">
+    <!-- Bootstrap Flatly Theme-->
+    <link rel="stylesheet" href="../lib/bootstrap/bootstrap.min.css">
     <!-- Custom styles-->
     <link rel="stylesheet" href="main.css">
     <!-- IE support-->
@@ -71,7 +72,7 @@
     </nav>
     <section id="top-header" class="jumbotron jumbo-inverse-light text-center"><i class="icon icon-logo"></i>
       <h1>Your idea needs a business model</h1>
-      <h3>Learn, Create and Collaborate on your Business Model Canvas</h3>
+      <h3>Learn, create and collaborate on your business model canvas</h3>
       <!--p
       a.btn.btn-default(
         analytics-on="click"
@@ -83,10 +84,12 @@
       -->
       <div id="apps-move"></div>
     </section>
-    <section id="learn" class="jumbotron jumbo-light text-center"><img src="img/apps-icon.png" alt="Business Model Apps Icon" class="section-icon">
-      <h1 class="section-title">Apps</h1>
+    <section id="learn" class="jumbotron jumbo-light text-center">
       <div class="row">
-        <div class="app-types col-sm-6">
+        <h1><img src="img/apps-icon.png" alt="Business Model Apps Icon" class="section-icon"><span class="section-title">Apps</span></h1>
+      </div>
+      <div class="row">
+        <div class="service app-types col-sm-6">
           <h2>Learn</h2>
           <h3>Learn business modeling from examples of most successful companies out there (Alpha release)</h3><a analytics-on="click" analytics-event="Learn with iPod example - Card" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://learn.businessmodel.io/apple-ipod">
             <div class="row">
@@ -103,39 +106,46 @@
               </div>
             </div></a>
         </div>
-        <div class="app-types col-sm-6">
+        <div class="service app-types col-sm-6">
           <h2>Create</h2>
           <h3>Create business model canvas on your device and collaborate with others in real time (Beta release)</h3><a analytics-on="click" analytics-event="Create canvas" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://canvas.businessmodel.io/">
             <div class="row">
               <div class="col-xs-6"><img src="img/business-model-canvas-app-desktop.jpg" alt="Business model canvas app for desktop and laptop computers" class="pull-right img-rounded"></div>
               <div class="col-xs-6"><img src="img/business-model-canvas-app-tablet.jpg" alt="Business model canvas app for tablets like iPad" class="pull-left img-rounded"></div>
             </div>
-            <div class="btn btn-info btn-lg">Create your business model</div></a>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="btn btn-info btn-lg">Create your business model</div>
+              </div>
+            </div></a>
         </div>
       </div>
     </section>
     <div id="workshops-move"></div>
-    <section id="workshops" class="jumbotron jumbo-dark text-center"><img src="img/workshops-icon.png" alt="Business Model Worshops   Icon" class="section-icon">
-      <h1 class="section-title">Workshops*</h1>
+    <section id="workshops" class="jumbotron jumbo-dark text-center">
       <div class="row">
-        <div class="workshop-photo col-xs-2"><img src="img/business-model-workshop-1.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
-        <div class="workshop-photo col-xs-2"><img src="img/business-model-workshop-2.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
-        <div class="workshop-photo col-xs-2"><img src="img/business-model-workshop-3.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
-        <div class="workshop-photo col-xs-2"><img src="img/business-model-workshop-4.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
-        <div class="workshop-photo col-xs-2"><img src="img/business-model-workshop-5.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
-        <div class="workshop-photo col-xs-2"><img src="img/business-model-workshop-6.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
-        <div class="workshop-types col-sm-6">
-          <h2>Open</h2>
-          <h3>Attend one of our free or payed workshops and learn business model canvas the fun way</h3>
+        <div class="col-sm-12">
+          <h1><img src="img/workshops-icon.png" alt="Business Model Worshops Icon" class="section-icon"><span class="section-title">Workshops</span></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="workshop-photo col-sm-2 col-xs-4"><img src="img/business-model-workshop-1.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
+        <div class="workshop-photo col-sm-2 col-xs-4"><img src="img/business-model-workshop-2.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
+        <div class="workshop-photo col-sm-2 col-xs-4"><img src="img/business-model-workshop-3.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
+        <div class="workshop-photo col-sm-2 col-xs-4"><img src="img/business-model-workshop-4.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
+        <div class="workshop-photo col-sm-2 col-xs-4"><img src="img/business-model-workshop-5.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
+        <div class="workshop-photo col-sm-2 col-xs-4"><img src="img/business-model-workshop-6.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
+      </div>
+      <div class="row">
+        <div class="service workshop-types col-sm-6">
+          <h2>Open to public</h2>
+          <h3>Attend one of our workshops and learn how to run lean</h3>
           <p><a analytics-on="click" analytics-event="Free - Book your spot" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://workshops.businessmodel.io/schedule" class="btn btn-info btn-lg">Book your Spot</a></p>
         </div>
-        <div class="workshop-types col-sm-6">
+        <div class="service workshop-types col-sm-6">
           <h2>Private</h2>
           <h3>Request a private workshop a service for your company or organisation</h3>
           <p><a analytics-on="click" analytics-event="Private - Request" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="mailto:info@businessmodel.io" target="_blank" class="btn btn-info btn-lg">Request</a></p>
-        </div>
-        <div class="col-sm-12">
-          <p>* Booking or requesting a workshop is currently available only in Norway</p>
         </div>
       </div>
     </section>
@@ -161,17 +171,18 @@
         <div class="col-md-6 col-md-offset-3">
           <p class="madewithlove">Made with<span><i class="icon icon-heart"></i>
               <!-- CDN Scripts-->
+              <!--include ../../lib/cdn/scripts-links-foot-->
               <!-- AngularJS-->
-              <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+              <script src="../lib/angular/angular.min.js"></script>
               <!-- Angular Animate-->
-              <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
+              <script src="../lib/angular/angular-animate.js"></script>
               <!-- Angular UI Router-->
-              <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+              <script src="../lib/angular/angular-ui-router.min.js"></script>
               <!-- Angular UI Bootstrap-->
-              <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+              <script src="../lib/angular/ui-bootstrap-tpls-0.11.0.min.js"></script>
               <!-- Angular Analytics-->
-              <script src="http://www.businessmodel.io/lib/angulartics.min.js"></script>
-              <script src="http://www.businessmodel.io/lib/angulartics-ga.min.js"></script>
+              <script src="../landing/lib/angulartics.min.js"></script>
+              <script src="../landing/lib/angulartics-ga.min.js"></script>
               <!-- Custom Scripts-->
               <script src="main.js"></script>
               <!-- Google Analytics-->

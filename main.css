@@ -11,12 +11,6 @@ h1,
   line-height: 4rem;
   margin-top: 10px;
 }
-h1.section-title {
-  color: #90a4ae !important;
-  font-size: 3.5rem;
-  font-weight: 600;
-  margin-bottom: 35px;
-}
 h2 {
   font-size: 2.5rem;
   line-height: 3.2rem;
@@ -48,9 +42,6 @@ img {
 }
 .iconRight {
   padding-left: 5px;
-}
-.section-icon {
-  width: 100px;
 }
 .btn {
   text-transform: uppercase;
@@ -135,8 +126,14 @@ img {
 .jumbo-light {
   background-color: #fff;
 }
+.jumbo-light h2 {
+  color: #425a61;
+}
 .jumbo-dark {
   background-color: #f6f9fb;
+}
+.jumbo-dark h2 {
+  color: #425a61;
 }
 .jumbo-dark .btn-default {
   margin-top: 30px;
@@ -153,6 +150,9 @@ img {
   color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.jumbo-inverse-light h2 {
+  color: #425a61;
 }
 .jumbo-inverse-light a {
   color: #fff;
@@ -259,11 +259,34 @@ h1,
 h2 {
   text-transform: uppercase;
 }
+.section-title {
+  color: #425a61;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  margin-left: 20px;
+}
+.section-icon {
+  width: 100px;
+}
 img {
   width: 100%;
 }
 hr {
   width: 20%;
+}
+@media (max-width: 420px) {
+  .btn {
+    width: 100%;
+    font-size: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .service {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 #top-header {
   padding-bottom: 40px;
