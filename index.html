@@ -62,101 +62,100 @@
       </div>
       <div collapse="isCollapsed" class="navbar-collapse bs-js-navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a ng-click="gotoElement('apps-move')" role="menuitem" tabindex="-1" href="#apps">Apps</a></li>
-          <li><a ng-click="gotoElement('workshops-move')" role="menuitem" tabindex="-1" href="#workshops">Workshops</a></li>
+          <li><a ng-click="gotoElement('learn-move')" role="menuitem" tabindex="-1" href="#learn">Learn</a></li>
+          <li><a ng-click="gotoElement('create-move')" role="menuitem" tabindex="-1" href="#create">Create</a></li>
+          <li><a ng-click="gotoElement('services-move')" role="menuitem" tabindex="-1" href="#services">Enterprise</a></li>
           <li><a ng-click="gotoElement('clients-move')" role="menuitem" tabindex="-1" href="#clients">Clients</a></li>
           <li><a ng-click="gotoElement('contact-move')" role="menuitem" tabindex="-1" href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <section id="top-header" class="jumbotron jumbo-inverse-light text-center"><i class="icon icon-logo"></i>
-      <h1>Your idea needs a business model</h1>
-      <h3>Learn, create and collaborate on your business model canvas</h3>
-      <!--p
-      a.btn.btn-default(
-        analytics-on="click"
-        analytics-event="Let's start"
-        analytics-category="Landing Page Interaction"
-        analytics-label="Landing page"
-        ng-click="gotoElement('learn-move')") Let's start
-        
-      -->
-      <div id="apps-move"></div>
+      <h1>Visualise your business ideas</h1>
+      <h3>Find out if there is market for your idea and what your customers realy want</h3>
+      <p><a analytics-on="click" analytics-event="Let's start" analytics-category="Landing Page Interaction" analytics-label="Landing page" ng-click="gotoElement('learn-move')" class="btn btn-info">Let's start</a></p>
+      <div id="learn-move"></div>
     </section>
     <section id="learn" class="jumbotron jumbo-light text-center">
-      <div class="row">
-        <h1><img src="img/apps-icon.png" alt="Business Model Apps Icon" class="section-icon"><span class="section-title">Apps</span></h1>
+      <div class="row section-header">
+        <h1><img src="img/Learn-icon.png" alt="Learn" class="section-icon">
+          <div class="section-title">Learn</div>
+        </h1>
       </div>
       <div class="row">
-        <div class="service app-types col-sm-6">
-          <h2>Learn</h2>
-          <h3>Learn business modeling from examples of most successful companies out there (Alpha release)</h3><a analytics-on="click" analytics-event="Learn with iPod example - Card" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://learn.businessmodel.io/apple-ipod">
+        <div class="part col-sm-6"><a analytics-on="click" analytics-event="Learn with iPod example - Card" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://learn.businessmodel.io/apple-ipod">
             <div class="row">
-              <div class="col-xs-3"></div>
-              <div class="col-xs-6"><img src="img/apple-ipod-itunes-business-model.png" alt="Apple iPod iTunes Business Model" class="img-rounded">
-                <!--.lesson.card.card-light.img-rounded
-                h3 Apple iPod + iTunes
-                span.icon-apple
-                -->
+              <div class="col-xs-12"><img src="img/learn-online-course.png" alt="Learn online course" class="img-rounded"></div>
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+                <h3>Learn from examples of most successful companies out there</h3>
               </div>
-              <div class="col-xs-3"></div>
               <div class="col-xs-12">
-                <div class="btn btn-info btn-lg">Learn From Examples</div>
+                <div class="btn btn-info btn-lg">Start online course</div>
               </div>
-            </div></a>
-        </div>
-        <div class="service app-types col-sm-6">
-          <h2>Create</h2>
-          <h3>Create business model canvas on your device and collaborate with others in real time (Beta release)</h3><a analytics-on="click" analytics-event="Create canvas" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://canvas.businessmodel.io/">
+            </div></a></div>
+        <div class="part col-sm-6"><a analytics-on="click" analytics-event="Free - Book your spot" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://workshops.businessmodel.io/schedule">
             <div class="row">
-              <div class="col-xs-6"><img src="img/business-model-canvas-app-desktop.jpg" alt="Business model canvas app for desktop and laptop computers" class="pull-right img-rounded"></div>
-              <div class="col-xs-6"><img src="img/business-model-canvas-app-tablet.jpg" alt="Business model canvas app for tablets like iPad" class="pull-left img-rounded"></div>
-            </div>
-            <div class="row">
+              <div class="col-xs-12"><img src="img/learn-workshop.png" alt="Learn online course" class="img-rounded"></div>
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+                <h3>Attend one of our creative workshops and you’ll be running lean in no time</h3>
+              </div>
               <div class="col-xs-12">
-                <div class="btn btn-info btn-lg">Create your business model</div>
+                <div class="btn btn-info btn-lg">Book your spot</div>
               </div>
-            </div></a>
-        </div>
+            </div></a></div>
       </div>
     </section>
-    <div id="workshops-move"></div>
-    <section id="workshops" class="jumbotron jumbo-dark text-center">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1><img src="img/workshops-icon.png" alt="Business Model Worshops Icon" class="section-icon"><span class="section-title">Workshops</span></h1>
-        </div>
+    <div id="create-move"></div>
+    <section id="create" class="jumbotron jumbo-light-blue text-center">
+      <div class="row section-header">
+        <h1><img src="img/Create-icon.png" alt="Create" class="section-icon">
+          <div class="section-title">Create</div>
+        </h1>
       </div>
       <div class="row">
-        <div class="workshop-photo col-sm-2 col-xs-4"><img src="img/business-model-workshop-1.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
-        <div class="workshop-photo col-sm-2 col-xs-4"><img src="img/business-model-workshop-2.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
-        <div class="workshop-photo col-sm-2 col-xs-4"><img src="img/business-model-workshop-3.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
-        <div class="workshop-photo col-sm-2 col-xs-4"><img src="img/business-model-workshop-4.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
-        <div class="workshop-photo col-sm-2 col-xs-4"><img src="img/business-model-workshop-5.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
-        <div class="workshop-photo col-sm-2 col-xs-4"><img src="img/business-model-workshop-6.jpg" alt="Business model canvas workshop" class="img-rounded"></div>
-      </div>
-      <div class="row">
-        <div class="service workshop-types col-sm-6">
-          <h2>Open to public</h2>
-          <h3>Attend one of our workshops and learn how to run lean</h3>
-          <p><a analytics-on="click" analytics-event="Free - Book your spot" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://workshops.businessmodel.io/schedule" class="btn btn-info btn-lg">Book your Spot</a></p>
-        </div>
-        <div class="service workshop-types col-sm-6">
-          <h2>Private</h2>
-          <h3>Request a private workshop a service for your company or organisation</h3>
-          <p><a analytics-on="click" analytics-event="Private - Request" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="mailto:info@businessmodel.io" target="_blank" class="btn btn-info btn-lg">Request</a></p>
-        </div>
+        <div class="part col-sm-12"><a analytics-on="click" analytics-event="Create canvas" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="http://canvas.businessmodel.io/">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="col-xs-12"></div><img src="img/create1.png" alt="Create Canvas" class="img-rounded">
+                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                  <h3>Visualise your idea with our business model canvas tool</h3>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="col-xs-12"></div><img src="img/create2.png" alt="Create Canvas Premium" class="img-rounded">
+                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                  <h3>Get feedback from one of our certified experts</h3>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="btn btn-info btn-lg">Create and get feedback</div>
+              </div>
+            </div></a></div>
       </div>
     </section>
   </body>
+  <div id="services-move">
+    <section id="services" class="jumbotron jumbo-light text-center">
+      <div class="row section-header">
+        <h1><img src="img/Services-icon.png" alt="Services" class="section-icon">
+          <div class="section-title">Enterprise</div>
+        </h1>
+      </div>
+      <div class="row">
+        <div class="part col-sm-12"><a analytics-on="click" analytics-event="Service - Request" analytics-category="Landing Page Interaction" analytics-label="Landing page" href="mailto:info@businessmodel.io" target="_blank">
+            <h3>Wheather you want to create innovation inside large enterprise or you simply want to disrupt your competition, contact us and we’ll make it happen together.</h3>
+            <div class="btn btn-info btn-lg">Create and get feedback</div></a></div>
+      </div>
+    </section>
+  </div>
   <div id="clients-move">
-    <section id="client-logos" class="jumbotron jumbo-light text-center">
+    <section id="client-logos" class="jumbotron jumbo-light-2 text-center">
       <h2>We helped</h2>
       <div class="row">
-        <div class="col-xs-3"><img src="img/logo1.png" alt="Avinor" class="img-rounded"></div>
-        <div class="col-xs-3"><img src="img/logo2.png" alt="Swipe" class="img-rounded"></div>
-        <div class="col-xs-3"><img src="img/logo3.png" alt="Traumacare Ethiopia" class="img-rounded"></div>
-        <div class="col-xs-3"><img src="img/logo4.png" alt="Nordic Semiconductor" class="img-rounded"></div>
+        <div class="col-sm-3"><img src="img/logo1.png" alt="Avinor" class="img-rounded"></div>
+        <div class="col-sm-3"><img src="img/logo2.png" alt="Swipe" class="img-rounded"></div>
+        <div class="col-sm-3"><img src="img/logo3.png" alt="Traumacare Ethiopia" class="img-rounded"></div>
+        <div class="col-sm-3"><img src="img/logo4.png" alt="Nordic Semiconductor" class="img-rounded"></div>
       </div>
     </section>
   </div>
